@@ -305,18 +305,19 @@ public class inter extends javax.swing.JFrame {
 
     private void botonMasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonMasActionPerformed
         // TODO add your handling code here:
-        a1=Double.parseDouble(pnt);
-        pantalla.setText("");
-        pnt="";
         op=1;
+        a1=Double.parseDouble(pnt);
+        pnt="";
+        pantalla.setText(pnt);       
+        System.out.println(a1);
     }//GEN-LAST:event_botonMasActionPerformed
 
     private void botonMenosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonMenosActionPerformed
         // TODO add your handling code here:
-        a1=Double.parseDouble(pnt);
-        pantalla.setText("");
-        pnt="";
         op=2;
+        a1=Double.parseDouble(pnt);
+        pnt="";
+        pantalla.setText(pnt);        
     }//GEN-LAST:event_botonMenosActionPerformed
 
     private void botonIgualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonIgualActionPerformed
@@ -326,15 +327,16 @@ public class inter extends javax.swing.JFrame {
         switch (op) {
             case 1:
                 a1=naho.suma(a1, a2);
-                pantalla.setText(a1+"");
+                pnt=a1+"";
+                pantalla.setText(pnt);
                 break;
                 
             case 2:
-                //a1=naho.resta(a1, a2);
-                pantalla.setText(naho.resta(a1, a2)+"");
+                a1=naho.resta(a1, a2);
+                pnt=a1+"";
+                pantalla.setText(pnt);
                 break;
         }
-        a2=0;
         
     }//GEN-LAST:event_botonIgualActionPerformed
 
