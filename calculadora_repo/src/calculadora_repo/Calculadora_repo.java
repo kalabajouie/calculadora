@@ -18,6 +18,8 @@ public class Calculadora_repo {
     public static void main(String[] args) {
         // TODO code application logic here
         System.out.println("inicio de la calculadora");
+        inter i = new inter();
+        i.setVisible(true);
     }
     
 }
